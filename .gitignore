@@ -30,3 +30,8 @@
 /config/application.yml
 
 .DS_Store
+
+.idea
+*.iml
+out
+gen
