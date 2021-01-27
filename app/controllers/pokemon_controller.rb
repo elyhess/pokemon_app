@@ -3,6 +3,7 @@ class PokemonController < ApplicationController
     pokemon = params[:pokemon]
     conn = Faraday.new("https://pokeapi.co")
     response = conn.get("/api/v2/pokemon-form/#{pokemon}/")
-    @pokemon = JSON.parse(response.body, symbolize_names: true)
+    data = JSON.parse(response.body, symbolize_names: true)
+    @pokemon = Pokemon.new(data)
   end
 end
