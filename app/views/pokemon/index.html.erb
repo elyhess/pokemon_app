@@ -4,7 +4,7 @@
     <h2>Id #<%= @pokemon.id %></h2>
     <%= image_tag "#{@pokemon.picture}" %>
   </div>
-  
+
   <%= form_tag '/pokemon', method: :get do %>
     <div align="center" class="poke-search">
       <p>Search for another Pokémon:</p>
