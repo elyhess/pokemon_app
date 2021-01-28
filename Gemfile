@@ -57,7 +57,8 @@ group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'simplecov'
-end 
+  gem 'webmock'
+end
 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
