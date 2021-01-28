@@ -4,8 +4,7 @@ describe Pokemon do
 	it 'exists' do
 		data = { name:    "charzard",
 		         id:      "12",
-		         sprites: { :front_default => "image.jpg" }
-						}
+		         sprites: { :front_default => "image.jpg" } }
 
 		pokemon = Pokemon.new(data)
 		expect(pokemon).to be_an_instance_of(Pokemon)
@@ -14,8 +13,7 @@ describe Pokemon do
 	it 'has attributes' do
 		data = { name:    "charzard",
 		         id:      "12",
-		         sprites: { :front_default => "image.jpg" }
-		}
+		         sprites: { :front_default => "image.jpg" } }
 
 		pokemon = Pokemon.new(data)
 		expect(pokemon.name).to eq("Charzard")
